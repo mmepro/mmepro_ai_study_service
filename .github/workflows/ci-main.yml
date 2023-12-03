@@ -1,0 +1,18 @@
+name: CI on main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # 추가적인 단계들을 여기에 추가
+      # ...
+
